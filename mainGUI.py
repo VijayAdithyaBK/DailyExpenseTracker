@@ -12,7 +12,7 @@ class ExpenseTrackerGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Daily Expense Tracker")
-        self.root.geometry("400x300")
+        self.root.geometry("500x500")
 
         # Apply the "Plastik" theme
         self.style = ThemedStyle(self.root)
@@ -59,7 +59,7 @@ class ExpenseTrackerGUI:
     def open_add_entry_window(self):
         add_window = tk.Toplevel(self.root)
         add_window.title("Add New Entry")
-        add_window.geometry("400x300")  # Set the fixed dimensions
+        add_window.geometry("500x500")  # Set the fixed dimensions
 
         self.mode_label = tk.Label(add_window, text="Mode of Transaction:")
         self.mode_label.pack()
@@ -96,7 +96,7 @@ class ExpenseTrackerGUI:
     def open_view_entries_window(self):
         view_window = tk.Toplevel(self.root)
         view_window.title("View Entries")
-        view_window.geometry("400x300")  # Set the fixed dimensions
+        view_window.geometry("500x500")  # Set the fixed dimensions
 
         year_label = tk.Label(view_window, text="Year:")
         year_label.pack()
